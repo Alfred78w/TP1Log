@@ -5,3 +5,5 @@ class Weapon():
 
     def fire_at(self, x: int, y: int, z: int):
         self._ammunitions -= 1
+
+
