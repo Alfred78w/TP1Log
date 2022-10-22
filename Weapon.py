@@ -7,3 +7,6 @@ class Weapon():
         self._ammunitions -= 1
 
 
+
+
+print("bonjour")
