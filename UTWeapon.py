@@ -2,13 +2,11 @@ import unittest
 
 
 class TestWeapon(unittest.TestCase):
-    def test_range(self):
-        distance = distance()
-        result = (range>=distance)
-        self.assertEqual(True, result)  # add assertion here
+    def test_ammunition(self, weapon):
+        ori = weapon.ammunitions
+        weapon.fire_at(0,0,0)
+        end = weapon.ammunitions
+        self.assertEqual(ori-1, end)
 
-    def test_ammunition(self):
-        ori = Weapon.ammunitions
-        self.assertEqual()
 if __name__ == '__main__':
     unittest.main()
