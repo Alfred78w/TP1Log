@@ -1,1 +1,1 @@
-print('Lassane sear envoyé au Benin apres sa formation')
+print('Lassane sera envoyé au Benin apres sa formation')
