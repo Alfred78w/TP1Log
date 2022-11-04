@@ -1,1 +1,2 @@
-print('Lassane sera envoyé au Benin apres sa formation')
+class pushe():
+    pass
