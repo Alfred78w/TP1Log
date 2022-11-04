@@ -17,9 +17,9 @@ class MyTestCase(unittest.TestCase):
         except wp.OutOfRangeError as exc:
             print("erreur, message :", exc)
 
-            print(c)  # normalement on doit avoir 49 munitions car le z est négatif
+            print(c)  # normalement on doit avoir 14 munitions car le z est négatif
 
-            self.assertEqual(15, c.ammunition)
+            self.assertEqual(14, c.ammunition)
 
 
 if __name__ == '__main__':
