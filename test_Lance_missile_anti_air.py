@@ -21,7 +21,7 @@ class MyTestCase(unittest.TestCase):
 
             print(b)  # normalement on doit avoir 49 munitions car le z est négatif
 
-            self.assertEqual(50, b.ammunition)
+            self.assertEqual(49, b.ammunition)
 
 
 if __name__ == '__main__':
