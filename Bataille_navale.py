@@ -5,6 +5,9 @@ class espace:
     def __init__(self, liste_de_vaisseau=[]):
 
         self.liste_de_vaisseau=liste_de_vaisseau
+    def afficher_mes_vaisseaux(self):
+        for i in self.liste_de_vaisseau:
+            print(i.coordinates)
 
     def ajouter_vaisseau(self, a):
         cp=0
@@ -34,13 +37,13 @@ class espace:
         return "Faux"
 
 
-
+# application
 a=vs.Cruisier((2,2,1))
 b=espace([a])
 print(b.liste_de_vaisseau[0].coordinates)
 c=vs.Cruisier((5,2,1))
 #c.max_hits=30
 b.ajouter_vaisseau(c)
-for i in b.liste_de_vaisseau:
-    print(i.coordinates)
+b.afficher_mes_vaisseaux()
 print(b.recevoir_coup(5,2,1))
+
